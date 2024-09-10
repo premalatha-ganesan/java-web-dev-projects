@@ -8,7 +8,10 @@ public class AreaOfTheCircle {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the radius of the circle");
         Double radius = input.nextDouble();
-        Double areaOfTheCircle = Circle.getArea(radius);
+        if(radius.hasNextDouble()){
+            Double areaOfTheCircle = Circle.getArea(radius);
+        }
+
         System.out.println("The area of the circle is : " + areaOfTheCircle);
     }
 }
